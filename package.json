@@ -1,5 +1,5 @@
 {
-  "homepage": "http://dannychung30.github.io/chef",
+  "homepage": "https://dannychung30.github.io/chef",
   "name": "recipe-generator",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@huggingface/inference": "^3.15.0",
