@@ -101,6 +101,7 @@ ul.ingredients-list > li {
 .get-recipe-container {
   display: flex;
   justify-content: space-between;
+  column-gap: 1em;
   align-items: center;
   border-radius: 8px;
   background: #F0EFEB;
@@ -149,4 +150,34 @@ ul.ingredients-list > li {
 .loader img {
   width: 60px;
   margin: 0 0 0.75em 0;
+}
+
+/******* Mobile *******/
+@media screen and (max-width: 639px) {
+  .ingredient-form {
+    flex-direction: column;
+    row-gap: 0.75em;
+  }
+
+  .ingredient-form input {
+    width: 100%;
+  }
+
+  .ingredient-form button {
+    width: 100%;
+  }
+
+  .get-recipe-container {
+    flex-direction: column;
+    row-gap: 0.75em;
+    padding: 0.25em 1.5em 1.75em;
+  }
+
+  .get-recipe-container > div {
+    width: 100%;
+  }
+
+  .get-recipe-container button {
+    width: 100%;
+  }
 }
